@@ -13,11 +13,11 @@ class Navbar extends Component {
                    
 
             
-                <nav id="inicio">
+                <nav class="navWeb">
                     <ul>
                         <li><Link to={"/register"} id="historia">Register</Link></li>
                         <li><Link to={"/login"} id="hobbies">Login</Link></li>
-                        <li> <Link to={"/profile"} id="contacto">Profile</Link></li>
+                        <li><Link to={"/profile"} id="contacto">Profile</Link></li>
                     </ul>
                 </nav>
             </div>

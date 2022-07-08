@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { scraping } from "../../../controllers/user.controllers";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 //Componente funcional -> 
 function Register(props) {
     let navigate = useNavigate();
@@ -32,16 +33,16 @@ function Register(props) {
         fetch("register", requestOptions)
             .then((response) => response.json())
 
-            .then((res)=>{
-                if(res.message == 'right'){
-                    localStorage.setItem('usuario',nicToSend)
+            .then((res) => {
+                if (res.message == 'right') {
+                    localStorage.setItem('usuario', nicToSend)
                 }
                 return res
             })
 
 
             .then((res) => {
-                (res.message == 'right') ? navigate("/login") : setConfirm('Incorrect user or password')
+                (res.message == 'right') ? navigate("/login") : setConfirm("Either the email or the nic aren't available")
             })
 
 
@@ -75,7 +76,7 @@ function Register(props) {
 
         <div >
 
-
+            <Navbar />
             <div class="registro" id="registro">
                 <h1 id="cabezaRegistro" class="cabezaLog">Registro</h1>
 

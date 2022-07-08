@@ -23,7 +23,7 @@ function Home(props) {
     
             <Navbar />
     
-    
+            <img src="https://i.ibb.co/Qkrb2hq/Erdtree-1-5.webp" id="erdtree"></img>
     
         </div>
     )

@@ -15,7 +15,7 @@ class Main extends Component {
         <div>
             <Routes>
                 <Route path="register" element={<Register />} />
-                <Route path="/" element={<Register />} />
+                <Route path="/" element={<Home />} />
                 <Route path="login" element={<Login />} />
                 <Route path="profile" element={<Profile />} />
                 <Route path="home" element={<Home />} />
